@@ -13,14 +13,21 @@ from pyspark.sql.types import *
 from pyspark.sql.functions import *
 
 from pyspark.sql.functions import date_format
+
 import pyspark.sql.functions as func
+
 from pyspark.ml import Pipeline
-from pyspark.ml.classification import LogisticRegression
+
 from pyspark.ml.evaluation import BinaryClassificationEvaluator, RegressionEvaluator
+
 from pyspark.ml.classification import DecisionTreeClassifier, RandomForestClassifier
+
 from pyspark.ml.tuning import ParamGridBuilder, TrainValidationSplit
+
 from pyspark.ml.evaluation import BinaryClassificationEvaluator
+
 from pyspark.ml.feature import VectorAssembler, StringIndexer, VectorIndexer, MinMaxScaler
+
 from pyspark.ml.feature import HashingTF, IDF, Tokenizer, CountVectorizer
 #
 
